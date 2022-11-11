@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NO 5</title>
+</head>
+<body>
+	<h1>silahkan pilih jenis hewan kesukaan anda : </h1>
+
+ 
+  <!-- memberikan event pada element tombol -->
+  <button type="radio" name="hewan" id="harimau" value="Harimau"> Harimau </button>
+   <button id="buaya" type="radio" name="hewan"  value="buaya">Buaya</button>
+  <button id="anjing" type="radio" name="hewan" value="anjing" >Anjing</button>
+  <button id="singa" type="radio" name="hewan" value="singa">Singa</button>
+
+  
+<script type="text/javascript">
+
+ const img = document.createElement('img');
+
+const button = document.querySelectorAll('button');
+
+const tagScript = document.querySelector('script');
+
+const appearImages = (hewan = '') => {
+    img.setAttribute('src', 'img/' + hewan + '.jpg',);
+    document.body.insertBefore(img, tagScript);
+};
+
+input.forEach((inp) => {
+    inp.addEventListener('click', function (event) {
+        switch (event.target.id) {
+            case 'harimau':
+                appearImages(event.target.id);
+                break;
+            case 'buaya':
+                appearImages(event.target.id);
+                break;
+            case 'anjing':
+                appearImages(event.target.id);
+                break;
+            case 'singa':
+                appearImages(event.target.id);
+                break;
+        }
+    });
+});
+</script>
+ 
+</body>
+</html>
