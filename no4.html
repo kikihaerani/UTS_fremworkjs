@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <button id="btn-submit">Pesan Hotel</button>
+<div id="message" style="display: none; ">
+        Pemesanan Berhasil
+    </div>
+   <button id="submit" class="description" >Batal</button>
+<div id="pesan" style="display: none;">
+        Proses Pembatalan Berhasil
+    </div>
+<script type="text/javascript">
+const hotel = {
+                Namahotel: " Hotel Deluna",
+                alamat: " jalan mimpi dan harapan No. 3 kota masadepan",
+                jkamar: " 13 kamar",
+                fasilitas: " Free Wifi, Kolam renang, Spa",
+                klasifikasi: "Bintang 5 ",
+
+boking:function (Namahotel,alamat,jkamar,fasilitas,klasifikasi){
+    this.Namahotel = `Namahotel`;
+    this.alamat =`alamat`;
+    this.jkamar = `jkamar`;
+    this.fasilitas = `fasilitas`;
+    this.klasifikasi = `klasifikasi`;
+    this.button = document.getElementById('message');
+    this.discription = function(btn){
+        console.info(`selamat anda telah memboking ${Namahotel}, alamat Hotel ${alamat},jumlah kamar ${jkamar}, Fasiliyas yang tersedia ${fasilitas}, hotel ini merupakan salah satu hotel ${klasifikasi}`);
+
+    }
+},
+batalBoking:function (Namahotel,alamat,jkamar,fasilitas,klasifikasi){
+    this.Namahotel = `Namahotel`;
+    this.alamat =`alamat`;
+    this.jkamar = `jkamar`;
+    this.fasilitas = `fasilitas`;
+    this.klasifikasi = `klasifikasi`;
+    this.button = document.getElementById('pesan');
+    this.discription = function(submit){
+        console.info(`selamat anda telah membatalkan bokingan di ${Namahotel}, alamat Hotel ${alamat},jumlah kamar ${jkamar}, Fasiliyas yang tersedia ${fasilitas}, hotel ini merupakan salah satu hotel ${klasifikasi}`);
+
+    }
+}
+
+}
+
+ console.log(hotel);
+ 
+
+</script> 
+</body>
+</html>
